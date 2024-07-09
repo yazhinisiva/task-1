@@ -1,40 +1,134 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-        <link rel="stylesheet" href="style.css"/>
-        <title>Calculator</title>
-    </head>
-    <body>
-        <div class="calculator">
-            <input type="text" id="display" value='0'>
-            <div class="buttons">
-                <button onclick="appendToDisplay('7')">7</button>
-                <button onclick="appendToDisplay('8')">8</button>
-                <button onclick="appendToDisplay('9')">9</button>
-                <button onclick="appendToDisplay('+')">+</button>
-                <button onclick="appendToDisplay('4')">4</button>
-                <button onclick="appendToDisplay('5')">5</button>
-                <button onclick="appendToDisplay('6')">6</button>
-                <button onclick="appendToDisplay('-')">-</button>
-                <button onclick="appendToDisplay('1')">1</button>
-                <button onclick="appendToDisplay('2')">2</button>
-                <button onclick="appendToDisplay('3')">3</button>
-                <button onclick="calculate()">=</button>
-            </div>
+<html lang="en">
+<head>
+    <title>Flower Shop Landing Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="header-content-div">
+            <a href="#home-sec">
+                <img src="FLOWER_SHOP_LOGO.png" alt="Flower Shop Logo" id="header-img">
+            </a>
+            <nav id="nav-bar">
+                <a href="#about" class="nav-link">ABOUT</a>
+                <a href="#our-products" class="nav-link">OUR PRODUCTS</a>
+                <a href="#our-service" class="nav-link">OUR SERVICE</a>
+                <a href="#contact" class="nav-link">CONTACT</a>
+            </nav>
         </div>
-        <script>
-            function appendToDisplay(val) {
-                var v=document.getElementById('display');
-                v.value += val;
-            }
-            function calculate() {
-                var num1=document.getElementById('display').value;
-                var num2=eval(num1);
-                document.getElementById('display').value = num2;
-            }
-        </script>
-    </body>
-
+    </header>
+    <main>
+        <section id="home-sec" class="flexible home-sec">
+            <div class="eye-grabber-img">
+                <img src="homeimg_flower.png" alt="Home Image">
+                <h1>Welcome to Our Flower Shop</h1>
+            </div>
+            <div class="eye-grabber">
+                <h1>Create Your Own Bouquet</h1>
+                <h2>
+                    Discover the beauty and fragrance of our exquisite flowers. Step into a world of vibrant colors and delightful aromas.
+                </h2>
+                <button class="btn" onclick="window.location.href = '#contact';">
+                    Shop Now
+                </button>
+            </div>
+        </section>
+        <section id="about" class="sec-padding">
+            <h3 class="section-heading">ABOUT US</h3>
+            <div class="sec-content-div flexible">
+                <p>
+                    Welcome to our Flower Shop! We are passionate about bringing nature's beauty to your doorstep. Explore our stunning collection of flowers that add a touch of elegance to any occasion. Whether you're looking for roses, lilies, tulips, or exotic blooms, we have it all. Our knowledgeable team is here to help you find the perfect bouquet for any event or sentiment. Experience the joy of flowers with us!
+                </p>
+                <img src="showroom_flower.webp" alt="Flower Shop Showroom">
+            </div>
+        </section>
+        <section id="our-products" class="sec-padding">
+            <h3 class="section-heading">OUR PRODUCTS</h3>
+            <div class="sec-content-div flexible">
+                <div class="tile">
+                    <img src="flower1.png" alt="Flower 1">
+                    <h4>Rose Bouquet</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptatibus maxime omnis possimus.</p>
+                </div>
+                <div class="tile">
+                    <img src="flower2.png" alt="Flower 2">
+                    <h4>Sunflower Arrangement</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima architecto ad totam dicta dolorem tempora magni eaque.</p>
+                </div>
+                <div class="tile">
+                    <img src="flower3.png" alt="Flower 3">
+                    <h4>Lily Bouquet</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda at quaerat delectus inventore accusamus.</p>
+                </div>
+                <div class="tile">
+                    <img src="flower4.png" alt="Flower 4">
+                    <h4>Tulip Arrangement</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita culpa eaque, repudiandae aperiam velit possimus magnam.</p>
+                </div>
+                <div class="tile">
+                    <img src="flower5.png" alt="Flower 5">
+                    <h4>Orchid Bouquet</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptates sint vitae eius sunt enim assumenda.</p>
+                </div>
+                <div class="tile">
+                    <img src="flower6.png" alt="Flower 6">
+                    <h4>Daisy Arrangement</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis deleniti vero ipsam facilis exercitationem.</p>
+                </div>
+            </div>
+        </section>
+        <section id="our-service" class="sec-padding">
+            <h3 class="section-heading">OUR SERVICE</h3>
+            <div class="sec-content-div">
+                <div class="bars">
+                    <div class="icon-container">
+                        <img src="image12_flower.png" alt="Find the Perfect Bouquet Icon">
+                    </div>
+                    <div class="txt-container">
+                        <h5>Find the Perfect Bouquet</h5>
+                        <p>Everyone has unique tastes, which is why we offer a variety of flowers to choose from.</p>
+                    </div>
+                </div>
+                <div class="bars">
+                    <div class="icon-container">
+                        <img src="image13_flower.png" alt="Free Delivery Icon">
+                    </div>
+                    <div class="txt-container">
+                        <h5>Free Delivery</h5>
+                        <p>We offer free delivery for all local orders, ensuring your flowers arrive fresh and beautiful.</p>
+                    </div>
+                </div>
+                <div class="bars">
+                    <div class="icon-container">
+                        <img src="image14_flower.png" alt="Expert Advice Icon">
+                    </div>
+                    <div class="txt-container">
+                        <h5>Expert Advice</h5>
+                        <p>Our floral experts are here to help you choose the perfect flowers for any occasion.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="sec-padding">
+            <h3 class="section-heading">CONTACT</h3>
+            <div class="sec-content-div flexible">
+                <h6>To place an order or learn more, contact us:</h6>
+                <form id="form" action="mailto:info@flowershop.com" method="POST" enctype="text/plain">
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email Address" required>
+                    <input type="submit" class="btn" id="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Flower Shop. All rights reserved.</p>
+            <p>Address: 123 Blossom Avenue, City, ZIP</p>
+            <p>Email: info@flowershop.com</p>
+        </div>
+    </footer>
+</body>
 </html>
